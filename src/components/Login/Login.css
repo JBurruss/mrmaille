@@ -1,12 +1,20 @@
-#login{
-    border-radius: 25px;
+#form{    
     position: absolute;
     top: 50%;
     right: 50%;
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    background-color:#007090;
+    border-radius: 15px;     
+}
+#login{
+    border-radius: 25px;
     font-size: 18px;
-    background-color: #7289af;
+    background-color: #A3BAC3;
 }
 #login:hover{
-    background-color: #0b377e;
+    background-color: #007090;
     color: white;
 }
