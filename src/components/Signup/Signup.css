@@ -1,7 +1,7 @@
-#form{    
+#form1{    
     position: absolute;
     top: 25%;
-    right: 40%;
+    right: 60%;
     width: 200px;
     height: 250px;
     border: 1px solid rgb(0, 0, 0);
@@ -10,7 +10,7 @@
     border-radius: 15px; 
     box-shadow: 10px 10px 5px #000000;    
 }
-#login{
+#signup{
     border-radius: 25px;
     font-size: 18px;
     background-color: #A3BAC3;
@@ -33,6 +33,11 @@
 #input2{
     position: relative;
     top: 5%;
+    left:7%;
+    border-radius: 5px;
+}
+#input3{
+    position: relative;    
     left:7%;
     border-radius: 5px;
 }
