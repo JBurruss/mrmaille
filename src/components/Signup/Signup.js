@@ -1,26 +1,26 @@
 import React from "react";
-import './Login.css';
+import './Signup.css';
 
-class Login extends React.Component {
+class Signup extends React.Component {
     constructor(props) {
       super(props);
       this.state={
           firstName:"",
           lastName:"",
-          click: props.click
+          email:""
 
       }
       this.formSubmit = this.formSubmit.bind(this);
       this.handleFirstName = this.handleFirstName.bind(this);
       this.handleLastName = this.handleLastName.bind(this);
+      this.handleEmail = this.handleEmail.bind(this);
       
     }
     formSubmit(e) {
         e.preventDefault();
-        console.log("potato");
         console.log("is working", this.state.firstName);
         console.log("is working", this.state.lastName);
-        this.state.click();
+        console.log("is working", this.state.email);
         
     }
     handleFirstName(e){
@@ -31,23 +31,30 @@ class Login extends React.Component {
         this.setState({lastName: e.target.value});
         console.log(e.target.value);
     }
+    handleEmail(e){
+        this.setState({email: e.target.value});
+        console.log(e.target.value);
+    }
     render() {
 // this.formSubmit();
       
       return (
         <div>
-        <form id = "form">
+        <form id = "form1">
             <input type="text" placeholder="User Name" id= "input1" onChange={this.handleFirstName} ></input>
             <br></br>
             <br></br>
             <input type="text" placeholder="Password" id= "input2" onChange={this.handleLastName}></input>
             <br></br>
             <br></br>
-            <button id = "login" onClick={this.formSubmit}>Login</button>
+            <input type="text" placeholder="Email" id= "input3" onChange={this.handleEmail}></input>
+            <br></br>
+            <br></br>
+            <button id = "signup" onClick={this.formSubmit}>Sign up</button>
         </form>
         </div>
       );
     }
   }
   
-  export default Login;
+  export default Signup;
