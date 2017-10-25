@@ -20,7 +20,6 @@ connection.query('SELECT ItemID, ProductName, Price FROM Products', function(err
 		
 	}
 	console.log(result);
-
 	
 });
 
