@@ -44,7 +44,7 @@ class Signup extends React.Component {
             <input type="text" placeholder="User Name" id= "input1" onChange={this.handleFirstName} ></input>
             <br></br>
             <br></br>
-            <input type="text" placeholder="Password" id= "input2" onChange={this.handleLastName}></input>
+            <input type="password" placeholder="Password" id= "input2" onChange={this.handleLastName}></input>
             <br></br>
             <br></br>
             <input type="text" placeholder="Email" id= "input3" onChange={this.handleEmail}></input>
