@@ -4,6 +4,7 @@ import './App.css';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import Nav from './components/Nav/Nav';
+import Item from './components/Item/Item';
 
 class App extends React.Component {
   state = {
@@ -19,10 +20,11 @@ class App extends React.Component {
     return(
       <div>    
       <Nav /> 
-      {!this.state.loggedIn ? (<div><Login click={this.login}/>
-      <Signup/></div>): ""}
-      {/* <Login />
-      <Signup/> */}
+      {/* <Item /> */}
+      {/*{!this.state.loggedIn ? (<div><Login click={this.login}/>
+      <Signup/></div>): ""}*/}
+      <Login />
+      <Signup/>
     </div>
     );
   }

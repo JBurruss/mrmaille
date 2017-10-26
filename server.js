@@ -1,26 +1,53 @@
 const mysql = require('mysql');
 const express = require('express');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
+const app = express();
 const connection = mysql.createConnection({
-	host: 'localhost',
-	user: 'root',
-	password: 'root',
-	database: 'mrmaille', 
+	host: 'bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+	user: 'n993vg4k7qnay5wo',
+	password: 'ra89cptmc4xzjixc',
+	database: 'su0kichwont6vfpg', 
 });
 
 var productPurchased = [];
 
-connection.connect();
+connection.connect(function(error){
 
-//connect to the mysql database and pull the information from the Products database to display to the user
-connection.query('SELECT ItemID, ProductName, Price FROM Products', function(err, result){
-	if(err) console.log(err);
+	if(!!error){
 
-	for(var i = 0; i < result.length; i++){
-		
+		console.log('Error');
+
+	}else{
+
+		console.log('Connected')
+
 	}
-	console.log(result);
-	
 });
 
+app.get('/', function(req, resp){
 
+connection.query('SELECT ItemID, ProductName, Price FROM Products', function(err, result){
+
+	if(err){
+
+		console.log(err);
+
+	} else{
+
+		console.log('Success');		
+ 		console.log(result);
+	}		
+})
+})
+
+app.listen(3306);
+
+// connection.query('SELECT ItemID, ProductName, Price FROM Products', function(err, result){
+// 	if(err) console.log(err);
+
+// 	for(var i = 0; i < result.length; i++){
+		
+// 	}
+// 	console.log(result);
+	
+// });
