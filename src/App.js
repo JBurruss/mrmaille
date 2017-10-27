@@ -20,12 +20,12 @@ class App extends React.Component {
     return(
       <div>    
       <Nav /> 
-      {/* <Item /> */}
+      <Item />
       {/*{!this.state.loggedIn ? (<div><Login click={this.login}/>
       <Signup/></div>): ""}*/}
-      <Login />
-      <Signup/>
-    </div>
+      {/*<Login />
+      <Signup />*/}
+      </div>
     );
   }
  

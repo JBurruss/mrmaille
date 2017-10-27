@@ -14,34 +14,23 @@ var productPurchased = [];
 connection.connect(function(error){
 
 	if(!!error){
-
 		console.log('Error');
-
 	}else{
-
 		console.log('Connected')
-
 	}
 });
 
 app.get('/', function(req, resp){
-
 connection.query('SELECT ItemID, ProductName, Price FROM Products', function(err, result){
-
 	if(err){
-
 		console.log(err);
-
 	} else{
-
 		console.log('Success');		
  		console.log(result);
 	}		
 })
 })
-
 app.listen(3306);
-
 // connection.query('SELECT ItemID, ProductName, Price FROM Products', function(err, result){
 // 	if(err) console.log(err);
 
