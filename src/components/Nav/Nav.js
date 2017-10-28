@@ -19,15 +19,23 @@ class Nav extends React.Component {
   }
   render() {
     return (
-      <div>
-        <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#search">Search</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li id = "Title">Mr Maille</li>
-  <li><a href="#Login" className="active" >Login</a></li>  
- </ul>
-      </div>
+      <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#search">Search</a>
+      <header>Mr Maille</header>
+      <a href="#contact">Contact</a>
+      <a href="#Cart" className="active" >Cart [0]</a>
+    </div>
+//         <div id = "navbar">
+//         <ul>
+//   <li><a href="#home">Home</a></li>
+//   <li><a href="#search">Search</a></li>
+//   <li><a href="#contact">Contact</a></li>
+//   <li id = "Title">Mr Maille</li>
+//   <li><a href="#Cart" className="active" >Cart [0]</a></li>  
+//  </ul>
+//  </div>
+      
     );
   }
 }

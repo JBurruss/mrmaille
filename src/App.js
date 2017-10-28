@@ -18,9 +18,9 @@ class App extends React.Component {
 
   render(){
     return(
-      <div>    
-      <Nav /> 
-      <Item />
+      <div> 
+      <Item />   
+      <Nav />       
       {/*{!this.state.loggedIn ? (<div><Login click={this.login}/>
       <Signup/></div>): ""}*/}
       {/*<Login />
