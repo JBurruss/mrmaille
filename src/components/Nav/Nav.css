@@ -1,4 +1,45 @@
-ul {
+.navbar{
+    overflow: hidden;
+    background-color: #A3BAC3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Medula One', cursive;
+    
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    background-color: #007090;
+  }
+  .navbar a:hover {
+    background-color: #A3BAC3;
+    
+}
+  
+  .main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px;
+  }
+  .active{
+    position: absolute;
+    right: 0%;
+  }
+  header{
+    position: absolute;
+    right: 43%;
+    margin-top: 3px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 40px;
+  }
+
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,11 +47,12 @@ ul {
     background-color: #A3BAC3; 
     opacity: 0.9;
     font-family: 'Medula One', cursive;
-    font-size: 25px;
+    font-size: 25px;    
 }
 
 li {
-    float: left;
+    float: left;  
+
 }
 
 li a {
@@ -19,6 +61,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
 }
 
 li a:hover {
@@ -39,12 +82,12 @@ li a:hover {
 }
 #Title{   
     position: absolute;
-    right: 50%;
+    right: 43%;
     margin-top: 3px;
     font-family: 'MedievalSharp', cursive;
     font-size: 40px;
     
-}
+} */
 
 /* font-family: 'MedievalSharp', cursive;
 font-family: 'Medula One', cursive;
