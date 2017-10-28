@@ -16,13 +16,12 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 35px;
-    background-color: #007090;
-    
+    background-color: #007090; 
+    background-image: linear-gradient(#A3BAC3,#007090);      
   }
   .navbar a:hover {
-    background-color: #A3BAC3;
-    
-}
+    color: #A3BAC3;  
+    }
   
   .main {
     padding: 16px;
