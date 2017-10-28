@@ -1,10 +1,11 @@
 .navbar{
     overflow: hidden;
     background-color: #A3BAC3;
+    background-image: linear-gradient(#A3BAC3,#007090);
     position: fixed;
     top: 0;
     width: 100%;
-    font-family: 'Medula One', cursive;
+    font-family: 'Medula One', cursive;   
     
 }
 .navbar a {
@@ -16,6 +17,7 @@
     text-decoration: none;
     font-size: 35px;
     background-color: #007090;
+    
   }
   .navbar a:hover {
     background-color: #A3BAC3;
@@ -38,57 +40,3 @@
     font-family: 'MedievalSharp', cursive;
     font-size: 40px;
   }
-
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #A3BAC3; 
-    opacity: 0.9;
-    font-family: 'Medula One', cursive;
-    font-size: 25px;    
-}
-
-li {
-    float: left;  
-
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    
-}
-
-li a:hover {
-    background-color: #007090;
-    
-}
-.active {
-    background-color: #007090;
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    opacity: 0.9;
-    font-family: 'Medula One', cursive;
-    font-size: 25px;
-}
-.active:hover {
-    background-color: #A3BAC3;  
-}
-#Title{   
-    position: absolute;
-    right: 43%;
-    margin-top: 3px;
-    font-family: 'MedievalSharp', cursive;
-    font-size: 40px;
-    
-} */
-
-/* font-family: 'MedievalSharp', cursive;
-font-family: 'Medula One', cursive;
-font-family: 'Meddon', cursive; */
