@@ -1,3 +1,7 @@
+.top{
+    overflow: auto;
+    padding-top: 60px;
+}
 .container {
     float: left;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -14,7 +18,9 @@
     }
 
 h1{
-    text-align: center;
+    position: relative;
+    text-align: left;
+    left: 13px;
     font-family: 'Medula One', cursive;
     font-size: 25px;
 }
@@ -22,6 +28,7 @@ h1{
 p{
     position: relative;
     left: 13px;
+    bottom: 20px;
     font-family: 'Medula One', cursive;
     font-size: 25px;
     text-align: left;

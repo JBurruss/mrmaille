@@ -26,8 +26,8 @@ class Item extends React.Component {
   }
     render() {
       return (
-        <div>
-        <div class="container">
+        <div className ="top">
+        <div className="container">
         <img src="img/Hauberk.jpg" />
         <h1>Chain Hauberk</h1>
         <p>The hauberk is typically a type of mail armour 
@@ -41,7 +41,7 @@ class Item extends React.Component {
            <button id = "cart" onClick={this.formSubmit}>Add to cart</button>                
           </div>
 
-          <div class="container">
+          <div className="container">
         <img src="img/Hauberk.jpg" />
         <h1>Chain Hauberk</h1>
         <p>The hauberk is typically a type of mail armour 
@@ -55,7 +55,7 @@ class Item extends React.Component {
            <button id = "cart" onClick={this.formSubmit}>Add to cart</button>                
           </div>
 
-          <div class="container">
+          <div className="container">
         <img src="img/Hauberk.jpg" />
         <h1>Chain Hauberk</h1>
         <p>The hauberk is typically a type of mail armour 
@@ -69,7 +69,7 @@ class Item extends React.Component {
            <button id = "cart" onClick={this.formSubmit}>Add to cart</button>                
           </div>
 
-          <div class="container">
+          <div className="container">
         <img src="img/Hauberk.jpg" />
         <h1>Chain Hauberk</h1>
         <p>The hauberk is typically a type of mail armour 
@@ -83,7 +83,7 @@ class Item extends React.Component {
            <button id = "cart" onClick={this.formSubmit}>Add to cart</button>                
           </div>
 
-          <div class="container">
+          <div className="container">
         <img src="img/Hauberk.jpg" />
         <h1>Chain Hauberk</h1>
         <p>The hauberk is typically a type of mail armour 
@@ -97,7 +97,7 @@ class Item extends React.Component {
            <button id = "cart" onClick={this.formSubmit}>Add to cart</button>                
           </div>
 
-          <div class="container">
+          <div className="container">
         <img src="img/Hauberk.jpg" />
         <h1>Chain Hauberk</h1>
         <p>The hauberk is typically a type of mail armour 
@@ -111,7 +111,7 @@ class Item extends React.Component {
            <button id = "cart" onClick={this.formSubmit}>Add to cart</button>                
           </div>
 
-          <div class="container">
+          <div className="container">
         <img src="img/Hauberk.jpg" />
         <h1>Chain Hauberk</h1>
         <p>The hauberk is typically a type of mail armour 
@@ -125,7 +125,7 @@ class Item extends React.Component {
            <button id = "cart" onClick={this.formSubmit}>Add to cart</button>                
           </div>
 
-          <div class="container">
+          <div className="container">
         <img src="img/Hauberk.jpg" />
         <h1>Chain Hauberk</h1>
         <p>The hauberk is typically a type of mail armour 
@@ -139,7 +139,7 @@ class Item extends React.Component {
            <button id = "cart" onClick={this.formSubmit}>Add to cart</button>                
           </div>
 
-          <div class="container">
+          <div className="container">
         <img src="img/Hauberk.jpg" />
         <h1>Chain Hauberk</h1>
         <p>The hauberk is typically a type of mail armour 
