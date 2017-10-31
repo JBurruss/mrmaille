@@ -5,8 +5,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    font-family: 'Medula One', cursive;   
-    
+    font-family: 'Medula One', cursive; 
+    z-index: 2;   
 }
 .navbar a {
     float: left;

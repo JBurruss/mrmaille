@@ -1,33 +1,29 @@
-import React from "react";
-
-import './App.css';
-import Login from './components/Login/Login';
-import Signup from './components/Signup/Signup';
+import React from 'react';
+import Cart from './containers/Cart';
+import ProductList from './containers/ProductList';
 import Nav from './components/Nav/Nav';
-import Item from './components/Item/Item';
 
-class App extends React.Component {
-  state = {
-    loggedIn: false
-  }
+const App = () => {
+    return (
+        <div>
+            <Nav />                   
+            <div className="row">
+                <div className="col-md-8">
+                    <ProductList />
+                </div>
+                <div className="col-md-4">
+                    <Cart />
+                </div>
+            </div>
 
-  login = () => {
-    console.log("click");
-    this.setState({loggedIn: true});
-  }
-
-  render(){
-    return(
-      <div> 
-      <Item />   
-      <Nav />       
-      {/*{!this.state.loggedIn ? (<div><Login click={this.login}/>
-      <Signup/></div>): ""}*/}
-      {/*<Login />
-      <Signup />*/}
-      </div>
+            <footer>
+                <medium>
+                    made by <a href="https://github.com/JBurruss">James Burruss</a>, source code available on <a href="https://github.com/JBurruss/mrmaille">github</a>
+                </medium>
+            </footer>
+        </div>
+        
     );
-  }
- 
-  }
+}
+
 export default App;
