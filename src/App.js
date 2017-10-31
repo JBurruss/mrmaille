@@ -1,28 +1,29 @@
 import React from 'react';
-import Cart from './containers/Cart';
-import ProductList from './containers/ProductList';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 import Nav from './components/Nav/Nav';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const App = () => {
     return (
         <div>
-            <Nav />                   
-            <div className="row">
-                <div className="col-md-8">
-                    <ProductList />
+            <Router>
+                <div>
+                    <Nav />
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/about" component={About} />
+                    <Route path="/contact" component={Contact} />
                 </div>
-                <div className="col-md-4">
-                    <Cart />
-                </div>
+            </Router>
+            <div className="container">
+                <footer>
+                    <small>
+                        made by <a href="https://github.com/JBurruss">James Burruss</a>, source code available on <a href="https://github.com/JBurruss/mrmaille">github</a>
+                    </small>
+                </footer>
             </div>
-
-            <footer>
-                <medium>
-                    made by <a href="https://github.com/JBurruss">James Burruss</a>, source code available on <a href="https://github.com/JBurruss/mrmaille">github</a>
-                </medium>
-            </footer>
-        </div>
-        
+        </div >
     );
 }
 

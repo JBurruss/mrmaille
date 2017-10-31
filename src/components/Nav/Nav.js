@@ -1,36 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Nav.css';
-import '../Signup/Signup';
-import '../Login/Login';
 
 class Nav extends React.Component {
   constructor(props) {
     super(props);
-console.log("hi");
+    console.log("hi");
   }
   render() {
     return (
       <div className="navbar">
-      <a href="#home">Home</a>
-      <a href="#search">Search</a>
-      <header>Mr Maille</header>
-      <a href="#contact">Contact</a>
-      <a href="#Login" className="active" >Login</a>
-    </div>      
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+        <header>Mr Maille</header>
+        <a href="#login" className="active" >Login</a>
+      </div>
     );
   }
 }
 
 export default Nav;
-
-// onClick={this.toggleHidden.bind(this)}
-
-  //   this.state = {
-  //     isHidden: true
-  //   }
-  // }
-  // toggleHidden () {
-  //   this.setState({
-  //     isHidden: !this.state.isHidden
-  //   })
-  // }

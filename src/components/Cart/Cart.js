@@ -4,9 +4,9 @@ import CartItem from './CartItem';
 
 const Cart = ({ items, total, currency, removeFromCart }) => {
     return (
-            <div className = "right">
-            <div className = "container">
+        <div>
             <h3>Shopping Cart</h3>
+
             <div className="cart">
                 <div className="panel panel-default">
                     <div className="panel-body">
@@ -20,12 +20,11 @@ const Cart = ({ items, total, currency, removeFromCart }) => {
                         {items.length === 0 && (
                             <div className="alert alert-info">Cart is empty</div>
                         )}
-                        <div className="cart__total">Total: {currency}{total} </div>
+                        <div className="cart__total">Total: ${total} </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     );
 }
 
