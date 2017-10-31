@@ -1,15 +1,7 @@
-.container {
-  float: left;
-  transition: 0.3s;
-  width: 50%;
-  border-radius: 5px;  
-  margin-top: 10px;
-  margin-left: 30px;
-  padding-bottom: 10px;   
-  }
 .cart__body {
   margin-bottom: 0.7em;
 }
+
 .cart-item {
   margin-bottom: 0.3em;
   display: flex;
