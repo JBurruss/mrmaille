@@ -6,6 +6,24 @@ import '../Login/Login';
 class Nav extends React.Component {
   constructor(props) {
     super(props);
+console.log("hi");
+  }
+  render() {
+    return (
+      <div className="navbar">
+      <a href="#home">Home</a>
+      <a href="#search">Search</a>
+      <header>Mr Maille</header>
+      <a href="#contact">Contact</a>
+      <a href="#Login" className="active" >Login</a>
+    </div>      
+    );
+  }
+}
+
+export default Nav;
+
+// onClick={this.toggleHidden.bind(this)}
 
   //   this.state = {
   //     isHidden: true
@@ -16,20 +34,3 @@ class Nav extends React.Component {
   //     isHidden: !this.state.isHidden
   //   })
   // }
-  }
-  render() {
-    return (
-      <div className="navbar">
-      <a href="#home">Home</a>
-      <a href="#search">Search</a>
-      <header>Mr Maille</header>
-      <a href="#contact">Contact</a>
-      <a href="#Cart" className="active" >Cart [0]</a>
-    </div>      
-    );
-  }
-}
-
-export default Nav;
-
-// onClick={this.toggleHidden.bind(this)}
