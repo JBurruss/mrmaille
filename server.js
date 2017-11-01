@@ -9,6 +9,7 @@ const connection = mysql.createConnection({
 	database: 'su0kichwont6vfpg', 
 });
 
+const PORT = process.env.port || 3001;
 var productPurchased = [];
 
 connection.connect(function(error){
@@ -30,13 +31,4 @@ connection.query('SELECT ItemID, ProductName, Price FROM Products', function(err
 	}		
 })
 })
-app.listen(3306);
-// connection.query('SELECT ItemID, ProductName, Price FROM Products', function(err, result){
-// 	if(err) console.log(err);
-
-// 	for(var i = 0; i < result.length; i++){
-		
-// 	}
-// 	console.log(result);
-	
-// });
+app.listen(PORT, function() { console.log("Running")});
