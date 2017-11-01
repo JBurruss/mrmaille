@@ -1,6 +1,5 @@
 const mysql = require('mysql');
 const express = require('express');
-// const bodyParser = require('body-parser');
 const app = express();
 const connection = mysql.createConnection({
 	host: 'bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
@@ -10,6 +9,7 @@ const connection = mysql.createConnection({
 });
 
 const PORT = process.env.port || 3001;
+
 var productPurchased = [];
 
 connection.connect(function(error){
