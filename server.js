@@ -10,8 +10,6 @@ const connection = mysql.createConnection({
 
 const PORT = process.env.port || 3001;
 
-var productPurchased = [];
-
 connection.connect(function(error){
 
 	if(!!error){
